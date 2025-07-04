@@ -9,32 +9,52 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { CheckCircle, Clock, Rocket } from "lucide-react"
+import { CheckCircle, Clock, Rocket, Check } from "lucide-react"
 
 const roadmapData = [
   {
-    quarter: "Q3 2024",
-    title: "Platform Launch",
-    description: "The official launch of the Immutag platform, including core features for asset creation and management. The marketplace will go live with initial partner collections.",
+    quarter: "Completed",
+    title: "Completed Milestones",
     status: "completed",
+    details: [
+        "LOX Network foundation established",
+        "Initial blockchain integration",
+        "Partnerships with key manufacturers and insurers",
+        "Successful proof-of-concept deployment"
+    ]
   },
   {
-    quarter: "Q4 2024",
-    title: "Mobile App Beta",
-    description: "Release of the beta version of our iOS and Android apps, allowing users to manage their digital assets on the go. Initial feedback will be collected for improvements.",
+    quarter: "Q3/Q4 2025",
+    title: "Rebranding & Beta Launch",
     status: "in-progress",
+    details: [
+        "Completion of Immutag rebranding",
+        "Token swap launch",
+        "Beta testing of mobile and web applications",
+        "Expansion of supported device categories"
+    ]
   },
   {
-    quarter: "Q1 2025",
-    title: "Advanced Creator Tools",
-    description: "Introduction of advanced tools for creators, including customizable smart contracts, batch minting, and royalty management features.",
+    quarter: "Q1/Q2 2026",
+    title: "Official Launch & API",
     status: "planned",
+    details: [
+        "Official app launch",
+        "Global partnership announcements",
+        "Launch of developer APIs (immutag.link)",
+        "Enhanced law enforcement and insurance integrations"
+    ]
   },
   {
-    quarter: "Q2 2025",
-    title: "Decentralized Governance",
-    description: "Implementation of a decentralized autonomous organization (DAO) to give the community a voice in the platform's future development and decision-making processes.",
+    quarter: "Future Goals",
+    title: "Future Goals",
     status: "planned",
+    details: [
+        "Introduction of AI-driven theft detection",
+        "Expansion into luxury goods and collectibles",
+        "Continuous platform improvements based on user feedback",
+        "Establishment of a global DAO for governance"
+    ]
   },
 ]
 
@@ -78,7 +98,7 @@ const RoadmapSection = () => {
 
             return (
               <div
-                key={item.quarter}
+                key={item.title}
                 className={`relative mb-8 flex w-full items-center ${
                   isEven ? "justify-start" : "justify-end"
                 }`}
@@ -96,7 +116,7 @@ const RoadmapSection = () => {
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button variant="link" className="px-0 h-auto text-sm text-muted-foreground neon-link">
-                        Learn more
+                        View Details
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
@@ -106,9 +126,17 @@ const RoadmapSection = () => {
                           {item.title}
                         </DialogTitle>
                          <DialogDescription className="pt-2 text-left">
-                          <strong>{item.quarter}</strong> - {item.description}
+                          {item.quarter}
                         </DialogDescription>
                       </DialogHeader>
+                      <ul className="mt-4 space-y-2">
+                        {item.details.map((detail, i) => (
+                            <li key={i} className="flex items-start gap-3">
+                                <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                                <span className="text-muted-foreground">{detail}</span>
+                            </li>
+                        ))}
+                    </ul>
                     </DialogContent>
                   </Dialog>
                 </div>
