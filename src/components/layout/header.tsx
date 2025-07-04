@@ -9,10 +9,10 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { name: 'About Us', href: '#about' },
-  { name: 'Roadmap', href: '#roadmap' },
-  { name: 'Whitepaper', href: '#whitepaper' },
   { name: 'How It Works', href: '#how-it-works' },
+  { name: 'Why Immutag?', href: '#why-immutag' },
+  { name: 'Devices', href: '#devices' },
+  { name: 'Technology', href: '#trust' },
 ];
 
 const Header = () => {
@@ -56,7 +56,7 @@ const Header = () => {
             <Link href="#">Sign In</Link>
           </Button>
           <Button className="bg-accent hover:bg-accent/90 text-accent-foreground neon-accent" asChild>
-            <Link href="#">Get Started</Link>
+            <Link href="#waitlist">Join Waitlist</Link>
           </Button>
         </div>
         <div className="md:hidden">
@@ -95,7 +95,7 @@ const Header = () => {
                     <Link href="#">Sign In</Link>
                   </Button>
                    <Button className="bg-accent hover:bg-accent/90 text-accent-foreground neon-accent" asChild>
-                    <Link href="#">Get Started</Link>
+                    <Link href="#waitlist">Join Waitlist</Link>
                   </Button>
                 </div>
               </div>

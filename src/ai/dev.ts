@@ -1,4 +1,1 @@
-import { config } from 'dotenv';
-config();
-
-import '@/ai/flows/explain-platform.ts';
+// This file is intentionally left empty as the AI feature has been removed.

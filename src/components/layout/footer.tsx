@@ -4,10 +4,10 @@ import Logo from '@/components/logo';
 import { Button } from '../ui/button';
 
 const navItems = [
-  { name: 'About Us', href: '#about' },
-  { name: 'Roadmap', href: '#roadmap' },
-  { name: 'Whitepaper', href: '#whitepaper' },
   { name: 'How It Works', href: '#how-it-works' },
+  { name: 'Why Immutag?', href: '#why-immutag' },
+  { name: 'Devices', href: '#devices' },
+  { name: 'Technology', href: '#trust' },
 ];
 
 const legalItems = [
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="md:col-span-4">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
-              The future of digital asset ownership.
+              The future of secure ownership starts here.
             </p>
           </div>
           
