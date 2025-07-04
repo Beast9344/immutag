@@ -95,7 +95,7 @@ const RoadmapSection = () => {
                   <h3 className="font-headline mt-1 text-xl font-bold">{item.title}</h3>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="link" className="px-0 h-auto text-sm text-muted-foreground">
+                      <Button variant="link" className="px-0 h-auto text-sm text-muted-foreground neon-link">
                         Learn more
                       </Button>
                     </DialogTrigger>

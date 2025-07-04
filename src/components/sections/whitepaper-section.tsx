@@ -41,7 +41,7 @@ const chartData = [
 const chartConfig = {
   allocation: {
     label: "Allocation (%)",
-    color: "hsl(var(--accent))",
+    color: "hsl(var(--chart-1))",
   },
 }
 
@@ -87,7 +87,7 @@ const WhitepaperSection = () => {
                  <p className="mt-4 text-muted-foreground">
                     Our token distribution is strategically planned to ensure the long-term sustainability and growth of the Immutag ecosystem. Funds are allocated to development, marketing, community rewards, and the team.
                  </p>
-                 <Button asChild className="mt-6">
+                 <Button asChild className="mt-6 neon-primary">
                     <a href="#" download>
                       <FileText className="mr-2 h-4 w-4" />
                       Download Full Whitepaper

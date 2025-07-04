@@ -45,17 +45,17 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary neon-link"
             >
               {item.name}
             </Link>
           ))}
         </nav>
         <div className="hidden items-center gap-2 md:flex">
-          <Button variant="outline" asChild>
+          <Button variant="outline" asChild className="neon-outline">
             <Link href="#">Sign In</Link>
           </Button>
-          <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+          <Button className="bg-accent hover:bg-accent/90 text-accent-foreground neon-accent" asChild>
             <Link href="#">Get Started</Link>
           </Button>
         </div>
@@ -84,17 +84,17 @@ const Header = () => {
                       key={item.name}
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
+                      className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary neon-link"
                     >
                       {item.name}
                     </Link>
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-4 pt-6">
-                  <Button variant="outline" asChild>
+                  <Button variant="outline" asChild className="neon-outline">
                     <Link href="#">Sign In</Link>
                   </Button>
-                   <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                   <Button className="bg-accent hover:bg-accent/90 text-accent-foreground neon-accent" asChild>
                     <Link href="#">Get Started</Link>
                   </Button>
                 </div>
