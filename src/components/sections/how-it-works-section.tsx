@@ -2,16 +2,13 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const steps = [
   {
-    title: "Tag Your Device",
-    description: "Apply a tamper-proof Immutag to your valuable item, physically linking it to the blockchain.",
+    title: "Tag your device",
   },
   {
-    title: "Register It Securely",
-    description: "Scan the tag with our app to create a unique digital identity (NFT) for your asset, immutably recorded.",
+    title: "Register it securely",
   },
   {
-    title: "Prove & Transfer",
-    description: "Easily prove, transfer, or even report your asset as stolen through the app, backed by blockchain verification.",
+    title: "Prove, transfer, or recover ownership anytime",
   },
 ]
 
@@ -36,13 +33,12 @@ const HowItWorksSection = () => {
               style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
             >
               <CardContent className="p-6">
-                <div className="flex items-start gap-4">
+                <div className="flex items-center gap-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-xl shrink-0">
                       {index + 1}
                     </div>
                     <div>
                       <h3 className="font-headline text-lg font-semibold">{step.title}</h3>
-                      <p className="mt-1 text-muted-foreground">{step.description}</p>
                     </div>
                 </div>
               </CardContent>

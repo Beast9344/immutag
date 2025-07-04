@@ -1,31 +1,30 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRightLeft, FileClock, ShieldCheck, ShieldOff, UserCheck } from "lucide-react"
 
 const features = [
   {
     icon: ShieldCheck,
     title: "Proven Ownership",
-    description: "Your tag is linked to a blockchain-verified NFT, providing irrefutable proof of ownership.",
+    description: "Your tag is linked to a blockchain-verified NFT.",
   },
   {
     icon: ShieldOff,
     title: "Theft Deterrent",
-    description: "Tagged items are harder for thieves to profit from, making them less attractive targets.",
+    description: "Harder for thieves to profit from stolen goods.",
   },
   {
     icon: FileClock,
     title: "Faster Insurance Claims",
-    description: "A verifiable ownership history and status can help to speed up insurance payouts.",
+    description: "Verifiable history speeds up payouts.",
   },
   {
     icon: ArrowRightLeft,
     title: "Simplified Transfers",
-    description: "Securely sell or gift your item with a simple, verifiable digital transfer of ownership.",
+    description: "Sell or gift your item with digital proof.",
   },
   {
     icon: UserCheck,
     title: "Law Enforcement Integration",
-    description: "We are building integrations to streamline checks for stolen assets with law enforcement agencies.",
+    description: "Streamlined checks for stolen assets.",
   },
 ]
 

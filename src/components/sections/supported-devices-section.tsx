@@ -17,7 +17,7 @@ const SupportedDevicesSection = () => {
             Supported Devices
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-            Immutag is being developed to support a growing range of valuable assets.
+            Immutag is being developed to support:
           </p>
         </div>
 
