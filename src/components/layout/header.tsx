@@ -10,8 +10,8 @@ import { cn } from '@/lib/utils';
 
 const navItems = [
   { name: 'How It Works', href: '#how-it-works' },
-  { name: 'Why Immutag?', href: '#why-immutag' },
-  { name: 'Devices', href: '#devices' },
+  { name: 'About', href: '#about' },
+  { name: 'Roadmap', href: '#roadmap' },
   { name: 'Technology', href: '#trust' },
 ];
 

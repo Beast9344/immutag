@@ -3,11 +3,16 @@ import { Twitter, Linkedin, Github } from 'lucide-react';
 import Logo from '@/components/logo';
 import { Button } from '../ui/button';
 
-const navItems = [
+const platformItems = [
   { name: 'How It Works', href: '#how-it-works' },
   { name: 'Why Immutag?', href: '#why-immutag' },
   { name: 'Devices', href: '#devices' },
   { name: 'Technology', href: '#trust' },
+];
+
+const companyItems = [
+  { name: 'About Us', href: '#about' },
+  { name: 'Roadmap', href: '#roadmap' },
 ];
 
 const legalItems = [
@@ -20,7 +25,7 @@ const Footer = () => {
     <footer className="border-t border-border/40 bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto max-w-7xl px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
               The future of secure ownership starts here.
@@ -30,7 +35,20 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h4 className="font-headline text-md font-semibold text-foreground">Platform</h4>
             <ul className="mt-4 space-y-2">
-              {navItems.map((item) => (
+              {platformItems.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-sm text-muted-foreground transition-colors hover:text-primary neon-link">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:col-span-2">
+            <h4 className="font-headline text-md font-semibold text-foreground">Company</h4>
+            <ul className="mt-4 space-y-2">
+              {companyItems.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-sm text-muted-foreground transition-colors hover:text-primary neon-link">
                     {item.name}
@@ -53,7 +71,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <h4 className="font-headline text-md font-semibold text-foreground">Connect With Us</h4>
             <div className="mt-4 flex items-center gap-2">
               <Button variant="ghost" size="icon" asChild className="neon-ghost">

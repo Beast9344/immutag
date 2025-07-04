@@ -1,7 +1,6 @@
-import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Eye, Rocket, Users } from 'lucide-react';
+import { ShieldCheck, Eye, Users, Building } from 'lucide-react';
 
 const teamMembers = [
   { name: 'Alex Johnson', role: 'CEO & Founder', avatar: 'https://placehold.co/100x100.png', dataAiHint: 'professional portrait' },
@@ -17,51 +16,57 @@ const AboutSection = () => {
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             About Immutag
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-            We are a passionate team dedicated to building the future of digital asset ownership on the decentralized web.
-          </p>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
-          <Card className="text-center">
-            <CardHeader>
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                <Rocket className="h-6 w-6" />
-              </div>
-              <CardTitle className="font-headline mt-4">Our Mission</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                To empower creators and collectors with a secure, transparent, and user-friendly platform for managing digital assets.
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="text-center">
-            <CardHeader>
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                <Eye className="h-6 w-6" />
-              </div>
-              <CardTitle className="font-headline mt-4">Our Vision</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                A future where digital ownership is seamless, universally accessible, and free from centralized control.
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="text-center">
-            <CardHeader>
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                <Users className="h-6 w-6" />
-              </div>
-              <CardTitle className="font-headline mt-4">Our Team</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Comprised of experts in blockchain technology, cryptography, and user experience design.
-              </p>
-            </CardContent>
-          </Card>
+        <div className="mt-12 grid gap-12 md:grid-cols-2">
+            <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                        <ShieldCheck className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h3 className="font-headline text-2xl font-bold">Our Mission</h3>
+                        <p className="mt-2 text-muted-foreground">
+                            At Immutag, our mission is to empower individuals and businesses by providing clear, secure, and indisputable proof of ownership for valuable items. By combining advanced blockchain technology with physical tagging, we’re revolutionising how ownership is secured and verified.
+                        </p>
+                    </div>
+                </div>
+                <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                        <Eye className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h3 className="font-headline text-2xl font-bold">Our Vision</h3>
+                        <p className="mt-2 text-muted-foreground">
+                            A world where every valuable asset is protected, verifiable, and effortlessly transferable, reducing theft, fraud, and disputes over ownership.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="space-y-8">
+                 <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                        <Building className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h3 className="font-headline text-2xl font-bold">Who We Are</h3>
+                        <p className="mt-2 text-muted-foreground">
+                            Immutag began as LOX Network, evolving into a leading provider of blockchain-based verification solutions. We collaborate closely with manufacturers, insurance providers, network operators, and law enforcement to ensure every device or asset registered on our platform is securely protected.
+                        </p>
+                    </div>
+                </div>
+                 <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                        <Users className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h3 className="font-headline text-2xl font-bold">Our Team</h3>
+                        <p className="mt-2 text-muted-foreground">
+                            Led by blockchain experts, security specialists, and technology entrepreneurs, our experienced team is dedicated to creating robust, user-friendly solutions that safeguard your assets and peace of mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div className="mt-20 text-center">
