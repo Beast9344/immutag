@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Shield, Lock, Database } from "lucide-react"
+import { Shield, Lock, Database, ArrowRight } from "lucide-react"
+import { Button } from "../ui/button"
+import Link from "next/link"
 
 const WhitepaperSection = () => {
   return (
@@ -41,6 +43,14 @@ const WhitepaperSection = () => {
                     <p className="text-muted-foreground">No single point of failure. Your ownership data is distributed and resilient.</p>
                   </div>
                 </div>
+            </div>
+             <div className="mt-8">
+              <Button asChild variant="outline" className="neon-outline">
+                <Link href="/whitepaper">
+                  Read Our Whitepaper
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </div>
            <div className="mt-10 lg:mt-0">

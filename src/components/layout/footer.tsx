@@ -7,7 +7,7 @@ const platformItems = [
   { name: 'How It Works', href: '/#how-it-works' },
   { name: 'Why Immutag?', href: '/#why-immutag' },
   { name: 'Devices', href: '/#devices' },
-  { name: 'Technology', href: '/#trust' },
+  { name: 'Whitepaper', href: '/whitepaper' },
 ];
 
 const companyItems = [
