@@ -9,11 +9,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Roadmap', href: '#roadmap' },
-  { name: 'Whitepaper', href: '#trust' },
-  { name: 'How It Works', href: '#how-it-works' },
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Roadmap', href: '/roadmap' },
+  { name: 'Whitepaper', href: '/#trust' },
+  { name: 'How It Works', href: '/#how-it-works' },
 ];
 
 const Header = () => {
