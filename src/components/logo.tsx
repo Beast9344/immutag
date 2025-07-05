@@ -5,12 +5,12 @@ const Logo = ({ className }: { className?: string }) => {
   return (
     <div className={cn('flex items-center', className)}>
       <Image
-        src="/public/logo.png"
+        src="/logo.png"  // Removed /public from path
         alt="Immutag Logo"
         width={150}
         height={40}
         data-ai-hint="company logo"
-        className="dark:invert"
+        // className="dark:invert"  // Optional: remove to test
       />
     </div>
   );
