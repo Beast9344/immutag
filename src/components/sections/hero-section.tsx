@@ -27,9 +27,6 @@ const HeroSection = () => {
           <p className="mt-4 font-headline text-2xl text-foreground/90 sm:text-3xl">
             The future of secure ownership starts here.
           </p>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
-            Immutag is building a new standard in asset protection — combining blockchain technology with physical tagging to give you irrefutable proof of ownership for your most valuable devices. From smartphones and laptops to watches and e-bikes, Immutag is designed to reduce theft, streamline transfers, and give peace of mind.
-          </p>
           <div className="mt-8 flex flex-col items-center gap-4">
             <p className="text-sm text-accent">
               App coming soon – Join the waitlist and be the first to experience a smarter way to secure and verify ownership.
