@@ -6,7 +6,7 @@ import { Button } from '../ui/button';
 const platformItems = [
   { name: 'How It Works', href: '/#how-it-works' },
   { name: 'Why Immutag?', href: '/#why-immutag' },
-  { name: 'Use Cases', href: '/use-cases' },
+  { name: 'Use Cases', href: '/#use-cases' },
   { name: 'Devices', href: '/#devices' },
   { name: 'Whitepaper', href: '/whitepaper' },
 ];
