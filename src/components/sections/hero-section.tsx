@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-grid-white/[0.05]"></div>
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://placehold.co/1600x900.png')" }}
+        style={{ backgroundImage: "/hero.jpeg" }}
         data-ai-hint="abstract technology background"
       >
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
